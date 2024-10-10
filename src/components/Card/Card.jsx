@@ -1,6 +1,8 @@
 import React from "react";
 import profile from "./images/image-victor.jpg";
 import bgTop from "./images/bg-pattern-card.svg";
+import { NavLink } from "react-router-dom";
+
 let data = [
   {
     id: 1,
@@ -53,6 +55,13 @@ export default function Card() {
           </div>
         </div>
       ))}
+
+      <NavLink
+        className=" mt-12 font-bold uppercase text-sm text-blue-300"
+        to="/"
+      >
+        Back to home
+      </NavLink>
     </div>
   );
 }
