@@ -16,11 +16,11 @@ let data = [
 
 export default function Card() {
   return (
-    <div className="flex flex-col h-screen w-screen justify-center items-center bg-teal-400">
+    <div className="flex flex-col h-screen w-screen justify-center items-center bg-blue-100">
       {data.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col shadow-xl rounded-2xl overflow-hidden w-64 items-center bg-white justify-center"
+          className="flex flex-col shadow-xl rounded-2xl overflow-hidden w-72 items-center bg-white justify-center"
         >
           <img src={bgTop} alt="" className="w-full h-24 object-fill" />
           <img

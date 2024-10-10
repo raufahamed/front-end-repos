@@ -8,6 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Navbar />} />
           <Route path="/landingpage" element={<Main />} />
           <Route path="/profileCard" element={<Card />} />
         </Routes>
