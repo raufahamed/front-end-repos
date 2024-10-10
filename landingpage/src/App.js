@@ -1,14 +1,18 @@
-import Footer from "./components/Homepage/Footer";
-import HomePage from "./components/Homepage/HomePage";
-import RoomNavbar from "./components/Homepage/RoomNavbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./components/Homepage/Main";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card/Card";
 
 function App() {
   return (
-    <div className="">
-    <RoomNavbar/>
-      <HomePage/>
-      <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/landingpage" element={<Main />} />
+          <Route path="/profileCard" element={<Card />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
